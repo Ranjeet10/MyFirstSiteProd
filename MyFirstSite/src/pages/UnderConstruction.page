@@ -4,15 +4,15 @@
       <apex:image url="{!URLFOR($Resource.SiteSamples, 'img/tools.png')}"/>
     </apex:define>
     <apex:define name="error">
-     <!-- <apex:outputText escape="false" styleClass="title" value="{!$Label.site.under_construction}">
+      <apex:outputText escape="false" styleClass="title" value="{!$Label.site.get_in_touch}">
         <apex:param value="{!$Site.BaseUrl}"/>
-      </apex:outputText> -->
+      </apex:outputText>
       <br/>
       <br/>
       <apex:outputText value="{!$Label.site.get_in_touch}"/>
       <apex:outputText escape="false" value=" {!$Label.site.get_in_touch}">
       <apex:param value="mailto:{!HTMLENCODE($Site.AdminEmailAddress)}"/>
-      <apex:param value="{!$Label.site.email_us}"/>
+      <apex:param value="{!$Label.site.get_in_touch}"/>
     </apex:outputText>
    </apex:define>
   </apex:composition>
